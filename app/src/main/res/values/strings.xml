@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">TP-julien-guillan-moc3</string>
+    <string name="mainTitle">INPUT FORM</string>
+    <string name="inputName">Name</string>
+    <string name="input_nb_follows"></string>
+    <string name="submit">Submit</string>
 </resources>
