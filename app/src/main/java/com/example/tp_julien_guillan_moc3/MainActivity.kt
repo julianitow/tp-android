@@ -2,13 +2,9 @@ package com.example.tp_julien_guillan_moc3
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Gravity
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import java.lang.IllegalStateException
-import java.lang.NumberFormatException
-import java.util.logging.Logger
 
 class MainActivity : AppCompatActivity() {
 
