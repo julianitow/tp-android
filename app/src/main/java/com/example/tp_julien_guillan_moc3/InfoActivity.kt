@@ -8,11 +8,15 @@ import java.lang.NumberFormatException
 class InfoActivity : AppCompatActivity() {
 
     lateinit var nameTextView: TextView
+    lateinit var followingTextView: TextView
+    lateinit var followerTextView: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_info)
         nameTextView = findViewById<TextView>(R.id.nameTextView)
+        followingTextView = findViewById<TextView>(R.id.followingTextView)
+        followerTextView = findViewById<TextView>(R.id.followerTextView)
         setData()
     }
 
@@ -27,5 +31,7 @@ class InfoActivity : AppCompatActivity() {
             error(e.localizedMessage)
         }
         this.nameTextView.text = name
+        this.followingTextView.text = followings.toString()
+        this.followerTextView.text = followers.toString()
     }
 }

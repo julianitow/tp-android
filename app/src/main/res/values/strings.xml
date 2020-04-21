@@ -8,4 +8,8 @@
     <string name="notifDescription">Notifications icon</string>
     <string name="dashboardDescription">Dashboard icon</string>
     <string name="clockDescription">Clock icon</string>
+    <string name="followingLabel">Following</string>
+    <string name="followerLabel">Follower</string>
+    <string name="themeButton">   Theme</string>
+    <string name="shareButton">   Share this app</string>
 </resources>
