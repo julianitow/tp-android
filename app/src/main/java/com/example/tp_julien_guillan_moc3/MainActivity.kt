@@ -1,5 +1,6 @@
 package com.example.tp_julien_guillan_moc3
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -26,9 +27,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun submit() {
-        println(getName())
-        println(getFollowers())
-        println(getFollowings())
+        val intent = Intent(this, InfoActivity::class.java).apply {
+            putExtra("name", getName())
+            putExtra("followings", getFollowings())
+            putExtra("followers", getFollowers())
+        }
+        startActivity(intent)
     }
 
     fun getName() : String? {

@@ -4,4 +4,8 @@
     <string name="inputName">Name</string>
     <string name="input_nb_follows"></string>
     <string name="submit">Submit</string>
+    <string name="avatarDescription">Avatar icon</string>
+    <string name="notifDescription">Notifications icon</string>
+    <string name="dashboardDescription">Dashboard icon</string>
+    <string name="clockDescription">Clock icon</string>
 </resources>
