@@ -1,9 +1,8 @@
 package com.example.tp_julien_guillan_moc3
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
-import java.lang.NumberFormatException
+import androidx.appcompat.app.AppCompatActivity
 
 class InfoActivity : AppCompatActivity() {
 
@@ -13,6 +12,10 @@ class InfoActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        try {
+            this.supportActionBar!!.hide()
+        } catch (e: NullPointerException) {
+        }
         setContentView(R.layout.activity_info)
         nameTextView = findViewById<TextView>(R.id.nameTextView)
         followingTextView = findViewById<TextView>(R.id.followingTextView)
